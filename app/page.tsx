@@ -1,6 +1,6 @@
 'use client'
 
-import { Download, Mail, Phone, Globe, Zap, Shield, Users, CheckCircle2, BarChart3, Lock, Cloud, Bell, QrCode, LayoutDashboard, Banknote, UserCheck, ClipboardList, Calendar, BookOpen, FileText, Files, PenTool, FileBadge, PlayCircle, Settings } from 'lucide-react'
+import { Download, Mail, Phone, Globe, Zap, Shield, Users, CheckCircle2, BarChart3, Lock, Cloud, Bell, QrCode, LayoutDashboard, Banknote, UserCheck, ClipboardList, Calendar, BookOpen, FileText, Files, PenTool, FileBadge, PlayCircle, Settings, Clock, Wallet, Box } from 'lucide-react'
 import { useState } from 'react'
 
 export default function BrochurePage() {
@@ -130,16 +130,29 @@ export default function BrochurePage() {
       <div className="max-w-4xl mx-auto">
         <h1 className="text-5xl font-bold text-slate-900 mb-2">School Admin Panel</h1>
         <p className="text-xl text-slate-600 mb-8">Complete Control Over School Operations</p>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-4 gap-4">
           {[
-            'Dashboard', 'Students', 'Transfer Certificate', 'Form Builder',
-            'Teachers', 'Teacher Attendance', 'Payroll', 'Syllabus',
-            'Timetable', 'Report Cards', 'Fees', 'Announcements',
-            'Leads & Inquiries', 'Reports', 'Basics and Extras', 'Inventory'
-          ].map((feature, i) => (
-            <div key={i} className="bg-white p-4 rounded-lg flex items-start gap-3 shadow-sm hover:shadow-md transition">
-              <CheckCircle2 className="w-5 h-5 text-green-500 flex-shrink-0 mt-1" />
-              <span className="text-slate-900 font-medium">{feature}</span>
+            { icon: <LayoutDashboard className="w-8 h-8" />, title: 'Dashboard', desc: 'Overview of metrics' },
+            { icon: <Users className="w-8 h-8" />, title: 'Students', desc: 'Student management' },
+            { icon: <FileText className="w-8 h-8" />, title: 'Transfer Certificate', desc: 'Generate TCs' },
+            { icon: <ClipboardList className="w-8 h-8" />, title: 'Form Builder', desc: 'Custom forms' },
+            { icon: <UserCheck className="w-8 h-8" />, title: 'Teachers', desc: 'Staff management' },
+            { icon: <Calendar className="w-8 h-8" />, title: 'Teacher Attendance', desc: 'Staff attendance' },
+            { icon: <Banknote className="w-8 h-8" />, title: 'Payroll', desc: 'Salary processing' },
+            { icon: <BookOpen className="w-8 h-8" />, title: 'Syllabus', desc: 'Curriculum plans' },
+            { icon: <Clock className="w-8 h-8" />, title: 'Timetable', desc: 'Class schedules' },
+            { icon: <FileBadge className="w-8 h-8" />, title: 'Report Cards', desc: 'Performance reports' },
+            { icon: <Wallet className="w-8 h-8" />, title: 'Fees', desc: 'Fee collections' },
+            { icon: <Bell className="w-8 h-8" />, title: 'Announcements', desc: 'School notices' },
+            { icon: <Phone className="w-8 h-8" />, title: 'Leads & Inquiries', desc: 'Admissions tracking' },
+            { icon: <BarChart3 className="w-8 h-8" />, title: 'Reports', desc: 'Analytics & insights' },
+            { icon: <Settings className="w-8 h-8" />, title: 'Basics and Extras', desc: 'System config' },
+            { icon: <Box className="w-8 h-8" />, title: 'Inventory', desc: 'Asset management' },
+          ].map((item, i) => (
+            <div key={i} className="bg-gradient-to-br from-blue-50 to-blue-100 p-6 rounded-xl text-center hover:shadow-lg transition">
+              <div className="text-blue-600 mb-3 flex justify-center">{item.icon}</div>
+              <h3 className="font-bold text-slate-900 mb-2">{item.title}</h3>
+              <p className="text-slate-600 text-sm">{item.desc}</p>
             </div>
           ))}
         </div>
