@@ -402,7 +402,7 @@ export default function BrochurePage() {
             </div>
             <div className="flex items-center justify-center gap-4">
               <Phone className="w-6 h-6" />
-              <span className="text-lg">Contact for pricing & demo</span>
+              <a href="tel:8512889586" className="text-lg hover:underline">+91 8512889586</a>
             </div>
           </div>
         </div>
@@ -424,7 +424,7 @@ export default function BrochurePage() {
       </div>
 
       {/* Navigation and Controls */}
-      <div className="sticky bottom-0 bg-white border-t border-slate-200 px-8 py-4 flex items-center justify-between shadow-lg">
+      <div className="sticky bottom-0 bg-white border-t border-slate-200 px-8 py-4 flex items-center justify-center shadow-lg">
         <div className="flex items-center gap-2">
           <button
             onClick={() => setCurrentPage(Math.max(0, currentPage - 1))}
@@ -444,14 +444,6 @@ export default function BrochurePage() {
             Next →
           </button>
         </div>
-
-        <button
-          onClick={() => window.print()}
-          className="flex items-center gap-2 px-6 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition font-semibold"
-        >
-          <Download className="w-5 h-5" />
-          Print as PDF
-        </button>
       </div>
     </div>
   )
