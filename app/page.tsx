@@ -411,7 +411,7 @@ export default function BrochurePage() {
             </div>
             <div className="flex items-center justify-center gap-4">
               <Mail className="w-6 h-6" />
-              <a href="mailto:support@devfordevs.in" className="text-lg hover:underline">support@devfordevs.in</a>
+              <a href="mailto:support.devfordevs@gmail.com" className="text-lg hover:underline">support.devfordevs@gmail.com</a>
             </div>
             <div className="flex items-center justify-center gap-4">
               <Phone className="w-6 h-6" />
