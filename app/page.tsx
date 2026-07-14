@@ -8,7 +8,7 @@ export default function BrochurePage() {
 
   const pages = [
     // Page 1: Cover
-    <div key="cover" className="min-h-screen bg-gradient-to-br from-blue-600 via-blue-500 to-blue-700 flex flex-col items-center justify-center text-white p-8 relative overflow-hidden">
+    <div key="cover" className="min-h-screen bg-gradient-to-br from-blue-600 via-blue-500 to-blue-700 flex flex-col items-center justify-center text-white p-5 md:p-8 relative overflow-hidden">
       <div className="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl -mr-48 -mt-48"></div>
       <div className="relative z-10 text-center max-w-3xl">
         <div className="mb-6">
@@ -16,10 +16,10 @@ export default function BrochurePage() {
             Complete Digital Solution
           </div>
         </div>
-        <h1 className="text-6xl font-bold mb-4">SKORA ERP</h1>
+        <h1 className="text-2xl md:text-4xl md:text-6xl font-bold mb-4">SKORA ERP</h1>
         <h2 className="text-3xl font-light mb-8">Complete Digital School Management Solution</h2>
         <p className="text-xl mb-12 opacity-90 font-light">Developed & Maintained by DevforDevs</p>
-        <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-8 mb-8">
+        <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-5 md:p-8 mb-8">
           <p className="text-lg italic">"Empowering Educational Institutions Through Smart Digital Transformation"</p>
         </div>
         <p className="text-lg opacity-90">Transforming Schools into Smart Digital Campuses</p>
@@ -34,9 +34,9 @@ export default function BrochurePage() {
     </div>,
 
     // Page 2: About DevforDevs
-    <div key="about-company" className="min-h-screen bg-white p-12 flex flex-col justify-center">
+    <div key="about-company" className="min-h-screen bg-white p-6 md:p-12 flex flex-col justify-center">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-5xl font-bold text-slate-900 mb-8">About DevforDevs</h1>
+        <h1 className="text-3xl md:text-5xl font-bold text-slate-900 mb-8">About DevforDevs</h1>
         <div className="space-y-6 text-lg text-slate-700 leading-relaxed">
           <p className="bg-blue-50 p-6 rounded-xl border-l-4 border-blue-500">
             DevforDevs is an educational technology company specializing in developing modern ERP solutions, websites, mobile applications, and digital platforms for schools, colleges, coaching institutes, and businesses.
@@ -44,7 +44,7 @@ export default function BrochurePage() {
           <p className="bg-green-50 p-6 rounded-xl border-l-4 border-green-500">
             Our goal is to simplify school administration through secure, scalable, and user-friendly technology that enhances communication between administrators, teachers, parents, and students.
           </p>
-          <div className="grid grid-cols-2 gap-6 mt-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
             {[
               { icon: '🎯', title: 'School ERP', desc: 'Complete management system' },
               { icon: '🌐', title: 'Websites', desc: 'Responsive school portals' },
@@ -52,7 +52,7 @@ export default function BrochurePage() {
               { icon: '⚙️', title: 'Custom Software', desc: 'Tailored solutions' },
             ].map((item, i) => (
               <div key={i} className="bg-gradient-to-br from-slate-50 to-slate-100 p-6 rounded-lg">
-                <div className="text-4xl mb-3">{item.icon}</div>
+                <div className="text-2xl md:text-4xl mb-3">{item.icon}</div>
                 <h3 className="font-bold text-slate-900 mb-2">{item.title}</h3>
                 <p className="text-slate-600 text-sm">{item.desc}</p>
               </div>
@@ -63,11 +63,11 @@ export default function BrochurePage() {
     </div>,
 
     // Page 3: About SKORA ERP
-    <div key="about-skora" className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 p-12 flex flex-col justify-center">
+    <div key="about-skora" className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 p-6 md:p-12 flex flex-col justify-center">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-5xl font-bold text-slate-900 mb-8">About SKORA ERP</h1>
+        <h1 className="text-3xl md:text-5xl font-bold text-slate-900 mb-8">About SKORA ERP</h1>
         <div className="space-y-6">
-          <div className="bg-white p-8 rounded-2xl shadow-lg border border-blue-100">
+          <div className="bg-white p-5 md:p-8 rounded-2xl shadow-lg border border-blue-100">
             <p className="text-2xl font-semibold text-slate-900 mb-4">All-in-One School Management Platform</p>
             <p className="text-lg text-slate-700 leading-relaxed mb-4">
               SKORA ERP is a complete cloud-based School Management System designed to digitize every operation of a school.
@@ -76,11 +76,11 @@ export default function BrochurePage() {
               The system enables seamless collaboration between administrators, teachers, parents, and students while reducing paperwork and improving operational efficiency.
             </p>
           </div>
-          <div className="grid grid-cols-4 gap-4 mt-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
             {[
-              { value: '500+', label: 'Schools' },
-              { value: '50K+', label: 'Teachers' },
-              { value: '200K+', label: 'Students' },
+              { value: '10+', label: 'Schools' },
+              { value: '20+', label: 'Teachers' },
+              { value: '250+', label: 'Students' },
               { value: '24/7', label: 'Support' },
             ].map((stat, i) => (
               <div key={i} className="bg-white p-4 rounded-lg text-center shadow">
@@ -94,11 +94,11 @@ export default function BrochurePage() {
     </div>,
 
     // Page 4: Complete Solution Overview
-    <div key="solution" className="min-h-screen bg-white p-12 flex flex-col justify-center">
+    <div key="solution" className="min-h-screen bg-white p-6 md:p-12 flex flex-col justify-center">
       <div className="max-w-5xl mx-auto">
-        <h1 className="text-5xl font-bold text-slate-900 mb-4 text-center">Complete Solution</h1>
+        <h1 className="text-3xl md:text-5xl font-bold text-slate-900 mb-4 text-center">Complete Solution</h1>
         <p className="text-xl text-slate-600 text-center mb-12">Five Integrated Platforms</p>
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {[
             { icon: '🌐', title: 'School Website', desc: 'Modern responsive website', color: 'blue' },
             { icon: '🖥️', title: 'Admin Panel', desc: 'Complete operational control', color: 'purple' },
@@ -114,8 +114,8 @@ export default function BrochurePage() {
               pink: 'from-pink-50 to-pink-100 border-pink-300',
             }
             return (
-              <div key={i} className={`bg-gradient-to-br ${colorMap[item.color as keyof typeof colorMap]} border rounded-xl p-8 hover:shadow-lg transition`}>
-                <div className="text-5xl mb-4">{item.icon}</div>
+              <div key={i} className={`bg-gradient-to-br ${colorMap[item.color as keyof typeof colorMap]} border rounded-xl p-5 md:p-8 hover:shadow-lg transition`}>
+                <div className="text-3xl md:text-5xl mb-4">{item.icon}</div>
                 <h3 className="text-2xl font-bold text-slate-900 mb-2">{item.title}</h3>
                 <p className="text-slate-700">{item.desc}</p>
               </div>
@@ -126,11 +126,11 @@ export default function BrochurePage() {
     </div>,
 
     // Page 5: Admin Panel Features
-    <div key="admin-panel" className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 p-12 flex flex-col justify-center">
+    <div key="admin-panel" className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 p-6 md:p-12 flex flex-col justify-center">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-5xl font-bold text-slate-900 mb-2">School Admin Panel</h1>
+        <h1 className="text-3xl md:text-5xl font-bold text-slate-900 mb-2">School Admin Panel</h1>
         <p className="text-xl text-slate-600 mb-8">Complete Control Over School Operations</p>
-        <div className="grid grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {[
             { icon: <LayoutDashboard className="w-8 h-8" />, title: 'Dashboard', desc: 'Overview of metrics' },
             { icon: <Users className="w-8 h-8" />, title: 'Students', desc: 'Student management' },
@@ -160,11 +160,11 @@ export default function BrochurePage() {
     </div>,
 
     // Page 6: Teacher Portal Features
-    <div key="teacher-portal" className="min-h-screen bg-white p-12 flex flex-col justify-center">
+    <div key="teacher-portal" className="min-h-screen bg-white p-6 md:p-12 flex flex-col justify-center">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-5xl font-bold text-slate-900 mb-2">Teacher Web Portal</h1>
+        <h1 className="text-3xl md:text-5xl font-bold text-slate-900 mb-2">Teacher Web Portal</h1>
         <p className="text-xl text-slate-600 mb-8">Manage Daily Academic Activities from Any Computer</p>
-        <div className="grid grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {[
             { icon: <LayoutDashboard className="w-8 h-8" />, title: 'Dashboard', desc: 'Quick overview of activities' },
             { icon: <Users className="w-8 h-8" />, title: 'My Students', desc: 'Complete student info' },
@@ -192,11 +192,11 @@ export default function BrochurePage() {
     </div>,
 
     // Page 7: Mobile Apps
-    <div key="mobile-apps" className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 p-12 flex flex-col justify-center">
+    <div key="mobile-apps" className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 p-6 md:p-12 flex flex-col justify-center">
       <div className="max-w-5xl mx-auto">
-        <h1 className="text-5xl font-bold text-slate-900 mb-12 text-center">Mobile Applications</h1>
-        <div className="grid grid-cols-2 gap-8">
-          <div className="bg-white p-8 rounded-2xl shadow-lg">
+        <h1 className="text-3xl md:text-5xl font-bold text-slate-900 mb-12 text-center">Mobile Applications</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="bg-white p-5 md:p-8 rounded-2xl shadow-lg">
             <h2 className="text-2xl font-bold text-slate-900 mb-4">📱 Teacher Mobile App</h2>
             <p className="text-slate-600 mb-4">Teachers manage daily tasks directly from smartphones</p>
             <div className="space-y-2">
@@ -208,7 +208,7 @@ export default function BrochurePage() {
               ))}
             </div>
           </div>
-          <div className="bg-white p-8 rounded-2xl shadow-lg">
+          <div className="bg-white p-5 md:p-8 rounded-2xl shadow-lg">
             <h2 className="text-2xl font-bold text-slate-900 mb-4">👨‍👩‍👧 Parent Mobile App</h2>
             <p className="text-slate-600 mb-4">Parents stay connected with school in real-time</p>
             <div className="space-y-2">
@@ -225,10 +225,10 @@ export default function BrochurePage() {
     </div>,
 
     // Page 8: Smart Features
-    <div key="features" className="min-h-screen bg-white p-12 flex flex-col justify-center">
+    <div key="features" className="min-h-screen bg-white p-6 md:p-12 flex flex-col justify-center">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-5xl font-bold text-slate-900 mb-12 text-center">Smart Features</h1>
-        <div className="grid grid-cols-3 gap-6">
+        <h1 className="text-3xl md:text-5xl font-bold text-slate-900 mb-12 text-center">Smart Features</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 md:grid-cols-3 gap-6">
           {[
             { icon: '☁️', title: 'Cloud Based', desc: 'Access from anywhere' },
             { icon: '🔔', title: 'Push Notifications', desc: 'Real-time updates' },
@@ -241,7 +241,7 @@ export default function BrochurePage() {
             { icon: '🆕', title: 'Auto Updates', desc: 'Always current' },
           ].map((feature, i) => (
             <div key={i} className="bg-gradient-to-br from-slate-50 to-slate-100 p-6 rounded-lg text-center hover:shadow-lg transition">
-              <div className="text-4xl mb-3">{feature.icon}</div>
+              <div className="text-2xl md:text-4xl mb-3">{feature.icon}</div>
               <h3 className="font-bold text-slate-900 mb-2">{feature.title}</h3>
               <p className="text-slate-600 text-sm">{feature.desc}</p>
             </div>
@@ -251,10 +251,10 @@ export default function BrochurePage() {
     </div>,
 
     // Page 9: Security
-    <div key="security" className="min-h-screen bg-gradient-to-br from-blue-900 to-blue-800 text-white p-12 flex flex-col justify-center">
+    <div key="security" className="min-h-screen bg-gradient-to-br from-blue-900 to-blue-800 text-white p-6 md:p-12 flex flex-col justify-center">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-5xl font-bold mb-12 text-center">Security & Reliability</h1>
-        <div className="grid grid-cols-2 gap-6">
+        <h1 className="text-3xl md:text-5xl font-bold mb-12 text-center">Security & Reliability</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {[
             { icon: <Lock className="w-8 h-8" />, title: 'JWT Authentication', desc: 'Secure token-based access' },
             { icon: <Shield className="w-8 h-8" />, title: 'HTTPS Encryption', desc: 'Protected data transmission' },
@@ -274,10 +274,10 @@ export default function BrochurePage() {
     </div>,
 
     // Page 10: Benefits
-    <div key="benefits" className="min-h-screen bg-white p-12 flex flex-col justify-center">
+    <div key="benefits" className="min-h-screen bg-white p-6 md:p-12 flex flex-col justify-center">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-5xl font-bold text-slate-900 mb-12 text-center">Key Benefits</h1>
-        <div className="grid grid-cols-2 gap-6">
+        <h1 className="text-3xl md:text-5xl font-bold text-slate-900 mb-12 text-center">Key Benefits</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {[
             'Reduce Paperwork', 'Faster Administration', 'Better Parent Communication', 'Digital Attendance',
             'Faster Fee Collection', 'Professional Report Cards', 'Secure Data', 'Accessible Anywhere',
@@ -293,16 +293,16 @@ export default function BrochurePage() {
     </div>,
 
     // Page 11: Pricing
-    <div key="pricing" className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 p-12 flex flex-col justify-center">
+    <div key="pricing" className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 p-6 md:p-12 flex flex-col justify-center">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-5xl font-bold text-slate-900 mb-12 text-center">Pricing</h1>
-        <div className="bg-white rounded-2xl shadow-xl p-8 mb-8">
+        <h1 className="text-3xl md:text-5xl font-bold text-slate-900 mb-12 text-center">Pricing</h1>
+        <div className="bg-white rounded-2xl shadow-xl p-5 md:p-8 mb-8">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-slate-900 mb-2">Complete School ERP Package</h2>
-            <div className="text-5xl font-bold text-blue-600 mt-4">₹18,000</div>
+            <div className="text-3xl md:text-5xl font-bold text-blue-600 mt-4">₹18,000</div>
             <p className="text-slate-600 mt-2">One-time setup & installation</p>
           </div>
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
               'School Website', 'Admin Panel', 'Teacher Portal', 'Teacher Mobile App',
               'Parent Mobile App', 'Initial Setup', 'Installation', 'Training',
@@ -319,10 +319,10 @@ export default function BrochurePage() {
     </div>,
 
     // Page 12: Annual Subscription
-    <div key="subscription" className="min-h-screen bg-white p-12 flex flex-col justify-center">
+    <div key="subscription" className="min-h-screen bg-white p-6 md:p-12 flex flex-col justify-center">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold text-slate-900 mb-8 text-center">Annual Subscription</h1>
-        <div className="bg-gradient-to-r from-blue-50 to-green-50 p-8 rounded-xl mb-8 border border-blue-200">
+        <h1 className="text-2xl md:text-4xl font-bold text-slate-900 mb-8 text-center">Annual Subscription</h1>
+        <div className="bg-gradient-to-r from-blue-50 to-green-50 p-5 md:p-8 rounded-xl mb-8 border border-blue-200">
           <p className="text-xl text-slate-900 font-semibold text-center mb-2">₹80 Per Student / Year</p>
           <p className="text-slate-600 text-center">Starting from Next Academic Session</p>
         </div>
@@ -354,10 +354,10 @@ export default function BrochurePage() {
     </div>,
 
     // Page 13: Optional Services
-    <div key="optional-services" className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 p-12 flex flex-col justify-center">
+    <div key="optional-services" className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 p-6 md:p-12 flex flex-col justify-center">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-5xl font-bold text-slate-900 mb-12 text-center">Optional Services</h1>
-        <div className="grid grid-cols-2 gap-6">
+        <h1 className="text-3xl md:text-5xl font-bold text-slate-900 mb-12 text-center">Optional Services</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {[
             { title: 'QR Attendance', desc: 'Quick and accurate attendance marking' },
             { title: 'UDISE Integration', desc: 'Government compliance & reporting' },
@@ -378,10 +378,10 @@ export default function BrochurePage() {
     </div>,
 
     // Page 14: Why Choose DevforDevs
-    <div key="why-choose" className="min-h-screen bg-white p-12 flex flex-col justify-center">
+    <div key="why-choose" className="min-h-screen bg-white p-6 md:p-12 flex flex-col justify-center">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-5xl font-bold text-slate-900 mb-12 text-center">Why Choose DevforDevs?</h1>
-        <div className="grid grid-cols-2 gap-6">
+        <h1 className="text-3xl md:text-5xl font-bold text-slate-900 mb-12 text-center">Why Choose DevforDevs?</h1>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {[
             'Affordable Pricing', 'Complete School ERP', 'Modern Technology', 'Secure Cloud Platform',
             'Mobile & Web Access', 'Fast Deployment', 'Regular Updates', 'Dedicated Technical Support',
@@ -397,12 +397,12 @@ export default function BrochurePage() {
     </div>,
 
     // Page 15: Contact
-    <div key="contact" className="min-h-screen bg-gradient-to-br from-blue-600 to-blue-700 text-white p-12 flex flex-col justify-center">
+    <div key="contact" className="min-h-screen bg-gradient-to-br from-blue-600 to-blue-700 text-white p-6 md:p-12 flex flex-col justify-center">
       <div className="max-w-3xl mx-auto text-center">
-        <h1 className="text-5xl font-bold mb-4">Get in Touch</h1>
+        <h1 className="text-3xl md:text-5xl font-bold mb-4">Get in Touch</h1>
         <p className="text-xl mb-12 opacity-90">Ready to transform your school? Contact us today!</p>
-        
-        <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-12 border border-white/20 mb-8">
+
+        <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 md:p-12 border border-white/20 mb-8">
           <h2 className="text-3xl font-bold text-white mb-8">DevforDevs</h2>
           <div className="space-y-6">
             <div className="flex items-center justify-center gap-4">
